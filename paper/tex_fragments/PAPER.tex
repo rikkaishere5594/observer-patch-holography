@@ -229,7 +229,7 @@ Node & Main-manuscript output & Immediate OPH ingredients & Standard mathematics
 \textbf{D6} & capacity/\(\Lambda\) reduction statements & D5 leaves \(+\Lambda g_{ab}\) undetermined & de Sitter entropy relation and dimensional analysis & external input \(N_{\mathrm{scr}}\) and the screen-capacity identification & input-dependent corollary / estimate \\
 \textbf{D7} & Theorem 6.1: compact gauge reconstruction & Axioms 1--4 & Doplicher--Roberts / Tannaka reconstruction & rigid symmetric bosonic colimit, transportability, and fiber-functor premises & conditional structural theorem \\
 \textbf{D8} & Section 6.2: product gauge structure up to finite quotient & D7 + Axiom 5 (MAR) & compact Lie representation classification; Schur's lemma & connected admissible class, one connected abelian factor, and \([z]=0\) & realized-branch theorem \\
-\textbf{D9} & Theorem 6.13, Proposition 6.9, Theorem 6.14, Proposition 6.6: hypercharge lattice, the counting chain \(N_g=3\) then \(N_c=3\), and the \(\mathbb Z_6\) quotient & D8 & anomaly algebra; Witten anomaly; CKM CP counting & realized one-generation/one-Higgs package and MAR admissibility premises & realized-branch theorem/corollary chain \\
+\textbf{D9} & Theorem 6.13, Proposition 6.9, Theorem 6.14, Proposition 6.6: hypercharge lattice, the counting chain \(N_g=3\) then \(N_c=3\), and the \(\mathbb Z_6\) quotient & D8 & anomaly algebra; Witten anomaly; CKM CP counting & realized one-generation/one-Higgs package, electroweak normalization convention \(Q=T_3+Y\) with \(Q(\nu_L)=0\), and MAR admissibility premises & realized-branch theorem/corollary chain \\
 \textbf{D12} & downstream flavor, dark-sector, baryogenesis, spectroscopy, and string branches & various subsets of D6 and D9 & branch-specific EFT and phenomenological manipulations & explicit additional ans\"atze & phenomenological continuation / program branch \\
 \end{longtable}
 }
@@ -2465,13 +2465,40 @@ QED.
 
 \textbf{Lemma 6.5 (Connected abelian factor criterion).} If the admissible sector package contains a connected abelian charge factor acting nontrivially on the coupled carrier, then the identity component of the abelianized reconstructed group contains a one-torus. Under the single connected abelian-factor admissibility premise, this factor is \(U(1)\). QED.
 
-\textbf{Proposition 6.6 (physical group quotient).} If the realized matter spectrum has hypercharges quantized in sixths, then the kernel acting trivially on all realized sectors is Z\textsubscript{6}, so
+\textbf{Proposition 6.6 (physical group quotient).} If the realized matter spectrum has hypercharges quantized in sixths under the electroweak normalization convention \(Q=T_3+Y\) with \(Q(\nu_L)=0\), then the kernel acting trivially on all realized sectors is Z\textsubscript{6}, so
 
 \[
 G_{\mathrm{phys}} = \frac{\mathrm{SU}(3)\times \mathrm{SU}(2)\times \mathrm{U}(1)}{\mathbb Z_6}.
 \]
 
-QED.
+\emph{Proof.} For the realized one-generation/one-Higgs package, the hypercharges are
+\[
+Y \in \left\{\frac16,\frac23,-\frac13,-\frac12,-1,\frac12\right\}
+\]
+for \((Q_L,u_R,d_R,L_L,e_R,H)\), so \(6Y\in\mathbb Z\). Write \(q:=6Y\) and \(\eta:=e^{i\pi/3}\), so the \(U(1)\) factor acts by \(\eta^q\) on charge-\(q\) multiplets. Let
+\[
+g_0:=(\omega_3,-1,\eta)\in \mathrm{SU}(3)\times \mathrm{SU}(2)\times \mathrm{U}(1),
+\]
+where \(\omega_3=e^{2\pi i/3}\) generates the center of \(\mathrm{SU}(3)\). Then
+\[
+Q_L:\ \omega_3(-1)\eta=1,\qquad
+u_R:\ \omega_3\eta^4=1,\qquad
+d_R:\ \omega_3\eta^{-2}=1,
+\]
+\[
+L_L:\ (-1)\eta^{-3}=1,\qquad
+e_R:\ \eta^{-6}=1,\qquad
+H:\ (-1)\eta^3=1.
+\]
+So \(g_0\) acts trivially on all realized multiplets, and its powers generate a subgroup of order six. Conversely, any central element of \(\mathrm{SU}(3)\times \mathrm{SU}(2)\times \mathrm{U}(1)\) has the form \((\omega_3^a,(-1)^b,e^{i\theta})\). If it acts trivially on all realized sectors, then triviality on \(e_R\) forces \(e^{i\theta}=\eta^n\) for some \(n\in\mathbb Z/6\mathbb Z\). Triviality on \(Q_L\) then gives
+\[
+\omega_3^a(-1)^b\eta^n=1,
+\]
+so \(a\equiv n \pmod 3\) and \(b\equiv n \pmod 2\). Hence every trivial central element equals \(g_0^n\), and the full kernel is exactly \(\mathbb Z_6\). Therefore
+\[
+G_{\mathrm{phys}} = \frac{\mathrm{SU}(3)\times \mathrm{SU}(2)\times \mathrm{U}(1)}{\mathbb Z_6}.
+\]
+\(\square\)
 
 \textbf{Proposition 6.6a (SM from MAR).} Under Axiom 5 (MAR):
 
@@ -2720,7 +2747,7 @@ Y_d = (N_c - 1) Y_Q,\quad
 Y_e = 2 N_c Y_Q.
 \]
 
-With these relations, SU(N\_c)\textsuperscript{2}U(1) and U(1)\textsuperscript{3} anomalies vanish automatically. Fixing the normalization by Q = T\textsubscript{3} + Y and Q(\ensuremath{\nu}\_L)=0 gives
+With these relations, SU(N\_c)\textsuperscript{2}U(1) and U(1)\textsuperscript{3} anomalies vanish automatically. Fixing the electroweak normalization convention by Q = T\textsubscript{3} + Y and Q(\ensuremath{\nu}\_L)=0 gives
 
 \[
 Y_Q = \frac{1}{2 N_c}.
@@ -3337,7 +3364,7 @@ Node & Representative outputs in this manuscript & Standard mathematics used & E
 \textbf{D6} & capacity/\(\Lambda\) statements and the separate capacity-based neutrino estimate & de Sitter entropy relation and dimensional analysis & external input \(N_{\mathrm{scr}}\) and the screen-capacity identification & Phase II input-dependent corollary / estimate \\
 \textbf{D7} & Theorem 6.1 compact gauge reconstruction & Doplicher--Roberts / Tannaka reconstruction & bosonic symmetric transportable colimit and fiber-functor premises; the refinement-stable qualifier is internal to the local finite-constraint MaxEnt/refinement branch & Phase I conditional structural theorem \\
 \textbf{D8} & product gauge structure up to finite quotient under MAR & compact Lie representation classification; Schur's lemma & MAR, connected admissible class, one connected abelian factor, and \([z]=0\) & Phase I realized-branch theorem \\
-\textbf{D9} & realized \(\SU(3)\times\SU(2)\times\U(1)/\mathbb Z_6\), exact hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and no gauge-mediated proton decay as a product-group corollary & anomaly algebra; Witten anomaly; CKM CP counting & realized one-generation/one-Higgs package and MAR admissibility premises & Phase I realized-branch theorem/corollary chain \\
+\textbf{D9} & realized \(\SU(3)\times\SU(2)\times\U(1)/\mathbb Z_6\), exact hypercharges, the counting chain \(N_g=3\) then \(N_c=3\), and no gauge-mediated proton decay as a product-group corollary & anomaly algebra; Witten anomaly; CKM CP counting & realized one-generation/one-Higgs package, electroweak normalization convention \(Q=T_3+Y\) with \(Q(\nu_L)=0\), and MAR admissibility premises & Phase I realized-branch theorem/corollary chain \\
 \textbf{D10} & gauge-coupling numerical closure of the D10 calibration branch & RG running and matching conventions & external input \(P\), pixel closure, and the printed threshold conventions & Phase II calibration sector \\
 \textbf{D12} & Koide/charged leptons, textures, dark-sector, baryogenesis, spectroscopy, string/worldsheet, and other downstream continuations & branch-specific EFT and phenomenological manipulations & explicit additional ans\"atze beyond D6, D9, or D10 & Phase III phenomenological continuation / program branch \\
 \end{longtable}
